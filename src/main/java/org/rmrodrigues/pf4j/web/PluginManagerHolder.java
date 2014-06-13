@@ -67,7 +67,7 @@ public class PluginManagerHolder {
 	 * 
 	 * @return single instance of PluginManagerHolder
 	 */
-	public static PluginManagerHolder getInstance() {
+	private static PluginManagerHolder getInstance() {
 		if (instance == null)
 			instance = new PluginManagerHolder();
 		return instance;
