@@ -8,7 +8,6 @@ import java.io.File;
 import ro.fortsoft.pf4j.DefaultPluginManager;
 import ro.fortsoft.pf4j.PluginManager;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class PluginManagerHolder.
  * 
@@ -23,7 +22,7 @@ public class PluginManagerHolder {
 	private String pluginsFolder;
 
 	/** The plugin manager. */
-	private PluginManager pluginManager;
+	private PluginManager pluginManagerInstance;
 
 	/** The has custom plugin path. */
 	boolean hasCustomPluginPath = false;
@@ -79,10 +78,10 @@ public class PluginManagerHolder {
 	 */
 	private void initialize() {
 		if (this.hasCustomPluginPath) {
-			pluginManager = new DefaultPluginManager(new File(
+			this.pluginManagerInstance = new DefaultPluginManager(new File(
 					this.pluginsFolder));
 		} else {
-			pluginManager = new DefaultPluginManager();
+			this.pluginManagerInstance = new DefaultPluginManager();
 		}
 
 	}
@@ -93,7 +92,26 @@ public class PluginManagerHolder {
 	 * @return the plugin manager
 	 */
 	public static PluginManager getPluginManager() {
-		return PluginManagerHolder.getInstance().getPluginManager();
+		return PluginManagerHolder.getInstance().getPluginManagerInstance();
+	}
+
+	/**
+	 * Gets the plugin manager instance.
+	 * 
+	 * @return the plugin manager instance
+	 */
+	public PluginManager getPluginManagerInstance() {
+		return pluginManagerInstance;
+	}
+
+	/**
+	 * Sets the plugin manager instance.
+	 * 
+	 * @param pluginManagerInstance
+	 *            the new plugin manager instance
+	 */
+	public void setPluginManagerInstance(PluginManager pluginManagerInstance) {
+		this.pluginManagerInstance = pluginManagerInstance;
 	}
 
 }

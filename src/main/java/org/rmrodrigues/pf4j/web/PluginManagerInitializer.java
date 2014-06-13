@@ -16,17 +16,15 @@ import ro.fortsoft.pf4j.PluginManager;
  */
 public class PluginManagerInitializer implements ServletContextListener {
 
+	/** The Constant logger. */
 	private static final Logger logger = LoggerFactory
 			.getLogger(PluginManagerInitializer.class);
 
 	/** The Constant CONST_CONFIG_PARAM_NAME. */
 	private static final String CONST_CONFIG_PARAM_NAME = "pf4j.pluginsDir";
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see javax.servlet.ServletContextListener#contextDestroyed(javax.servlet.
-	 * ServletContextEvent)
+	/* (non-Javadoc)
+	 * @see javax.servlet.ServletContextListener#contextDestroyed(javax.servlet.ServletContextEvent)
 	 */
 	public void contextDestroyed(ServletContextEvent servletContextEvent) {
 		logger.debug("contextDestroyed start.");
@@ -40,6 +38,9 @@ public class PluginManagerInitializer implements ServletContextListener {
 
 	}
 
+	/* (non-Javadoc)
+	 * @see javax.servlet.ServletContextListener#contextInitialized(javax.servlet.ServletContextEvent)
+	 */
 	public void contextInitialized(ServletContextEvent servletContextEvent) {
 		logger.debug("contextInitialized start.");
 		logger.info("Initializing plugin manager.");
