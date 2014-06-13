@@ -4,7 +4,6 @@
  Web module for pf4j. The main goal of this module is allows developers use pf4j in web applications.
  
 ## How to use
-  
 ### Maven
 Define the pf4j-web dependency in your pom.xml:
 
@@ -31,7 +30,7 @@ It's necessary to define a listener class in your web.xml:
 ```
 
 ### Plugin's home
-Is possible to define a custom folder for the plugin's home. So, in this cases it's necessary to a context-param in your web.xml with param name "*pf4j.pluginsDir*".
+It's possible to define a custom folder for the plugin's home. So, in this case it's necessary to add a context-param in your web.xml with param name "*pf4j.pluginsDir*".
 
 ```xml
 
@@ -43,7 +42,7 @@ Is possible to define a custom folder for the plugin's home. So, in this cases i
 ```
 
 ## PF4J Documentation
-For a more detailed documentation related the core of pf4j please visit:[https://github.com/decebals/pf4j](https://github.com/decebals/pf4j) 
+For a more detailed documentation about pf4j core, please visit: [https://github.com/decebals/pf4j](https://github.com/decebals/pf4j) 
 
 ##Demo
 Visit the demo here: [https://github.com/rmrodrigues/pf4j-web-demo](https://github.com/rmrodrigues/pf4j-web-demo)
