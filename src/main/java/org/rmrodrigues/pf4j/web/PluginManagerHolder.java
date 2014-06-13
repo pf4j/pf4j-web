@@ -104,14 +104,4 @@ public class PluginManagerHolder {
 		return pluginManagerInstance;
 	}
 
-	/**
-	 * Sets the plugin manager instance.
-	 * 
-	 * @param pluginManagerInstance
-	 *            the new plugin manager instance
-	 */
-	public void setPluginManagerInstance(PluginManager pluginManagerInstance) {
-		this.pluginManagerInstance = pluginManagerInstance;
-	}
-
 }
