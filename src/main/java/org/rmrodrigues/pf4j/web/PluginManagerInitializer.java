@@ -23,9 +23,7 @@ public class PluginManagerInitializer implements ServletContextListener {
 	/** The Constant CONST_CONFIG_PARAM_NAME. */
 	private static final String CONST_CONFIG_PARAM_NAME = "pf4j.pluginsDir";
 
-	/* (non-Javadoc)
-	 * @see javax.servlet.ServletContextListener#contextDestroyed(javax.servlet.ServletContextEvent)
-	 */
+	
 	public void contextDestroyed(ServletContextEvent servletContextEvent) {
 		logger.debug("contextDestroyed start.");
 		logger.debug("get plugin manager");
@@ -38,9 +36,7 @@ public class PluginManagerInitializer implements ServletContextListener {
 
 	}
 
-	/* (non-Javadoc)
-	 * @see javax.servlet.ServletContextListener#contextInitialized(javax.servlet.ServletContextEvent)
-	 */
+	
 	public void contextInitialized(ServletContextEvent servletContextEvent) {
 		logger.debug("contextInitialized start.");
 		logger.info("Initializing plugin manager.");
