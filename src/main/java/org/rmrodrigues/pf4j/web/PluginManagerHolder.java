@@ -24,7 +24,7 @@ public class PluginManagerHolder {
 	 * @param pluginsHome
 	 *            the plugins home
 	 */
-	public static void init(String pluginsHome) {
+	static void init(String pluginsHome) {
 		if (pluginsHome != null) {
 			pluginManager = new DefaultPluginManager(new File(pluginsHome));
 		} else {
