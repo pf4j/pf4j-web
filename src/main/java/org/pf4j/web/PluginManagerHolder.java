@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.rmrodrigues.pf4j.web;
+package org.pf4j.web;
 
 import java.io.File;
 

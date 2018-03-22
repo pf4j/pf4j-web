@@ -1,4 +1,4 @@
-package org.rmrodrigues.pf4j.web;
+package org.pf4j.web;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
