@@ -1,21 +1,36 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project 
+	xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+						http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.rmrodrigues.pf4j.web</groupId>
+	<groupId>org.pf4j.web</groupId>
 	<artifactId>pf4j-web</artifactId>
 	<version>0.9.0-SNAPSHOT</version>
 	<name>pf4j-web</name>
-	<description>PF4j web module</description>
-	<url>https://github.com/rmrodrigues/pf4j-web</url>
-
-
+	<description>PF4J web module</description>
+	<url>https://github.com/pf4j/pf4j-web</url>
 	<properties>
-		<pf4j.version>0.9.0-SNAPSHOT</pf4j.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<pf4j.version>2.0.0</pf4j.version>
 	</properties>
-
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	<dependencies>
 		<dependency>
-			<groupId>ro.fortsoft.pf4j</groupId>
+			<groupId>org.pf4j</groupId>
 			<artifactId>pf4j</artifactId>
 			<version>${pf4j.version}</version>
 		</dependency>
@@ -25,6 +40,5 @@
 			<version>2.5</version>
 			<scope>provided</scope>
 		</dependency>
-
 	</dependencies>
 </project>
