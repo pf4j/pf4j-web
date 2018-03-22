@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Plugin-Class: org.rmrodrigues.pf4j.demo.json.plugin.JSonExporterPlugin
+Plugin-Dependencies: 
+Plugin-Id: pf4j-web-demo-json-plugin
+Built-By: rmrodrigues
+Build-Jdk: 1.7.0_60
+Plugin-Provider: RMRdrigues
+Plugin-Version: 1.0.0
+Created-By: Apache Maven 3.0.5
+Archiver-Version: Plexus Archiver
+

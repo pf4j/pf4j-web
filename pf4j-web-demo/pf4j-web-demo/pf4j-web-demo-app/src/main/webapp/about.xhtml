@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<h:head>
+		<h:outputStylesheet library="css" name="custom-style.css" />
+		<h:outputScript library="js" name="ga.js" />
+	</h:head>
+	<h:body>
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">pf4j-web-demo</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="default.xhtml">Home</a></li>
+						<li><a href="plugins.xhtml">Plugins</a></li>
+						<li class="active"><a href="#">About</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="starter-template">
+				<h1>About This Demo</h1>
+
+				<h3>pf4j-web-demo</h3>
+
+				<p>
+					The main goal of this application is to demonstrate how simple is
+					to develop a modular web application using <a
+						href="https://github.com/decebals/pf4j">PF4j (Plugin Framework
+						for JAVA)</a>.
+				</p>
+				<p>
+					See the documentation on <a
+						href="https://github.com/rmrodrigues/pf4j-web-demo">GitHub</a>
+				</p>
+
+			</div>
+		</div>
+		<!-- /.container -->
+
+		<div id="footer" class="navbar navbar-inverse navbar-fixed-bottom">
+			<div class="container">
+				<p class="text-muted">
+					© <a href="https://github.com/rmrodrigues">RMRodrigues</a> 2014
+				</p>
+			</div>
+		</div>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet"
+			href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+
+		<!-- Optional theme -->
+		<link rel="stylesheet"
+			href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
+
+		<script
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script
+			src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	</h:body>
+
+</ui:composition>
