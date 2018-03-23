@@ -43,7 +43,7 @@ It's possible to define a custom folder for the plugin's home. So, in this case 
 ## PF4J Documentation
 For a more detailed documentation about pf4j core, please visit: [https://github.com/pf4j/pf4j](https://github.com/pf4j/pf4j) 
 
-##Demo
+## Demo
 Visit the demo here: [https://github.com/pf4j/pf4j-web/demo](https://github.com/pf4j/pf4j-web/demo)
 
 # History
