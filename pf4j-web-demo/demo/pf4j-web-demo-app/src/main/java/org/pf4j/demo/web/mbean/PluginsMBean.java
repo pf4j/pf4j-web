@@ -151,7 +151,7 @@ public class PluginsMBean implements Serializable {
 		out.write(bytes);
 		out.close();
 		String newPluginID = PluginManagerHolder.getPluginManager().loadPlugin(
-				new File(pluginsHome + "/" + fileName));
+				new File(pluginsHome + "/" + fileName).toPath());
 
 		PluginManagerHolder.getPluginManager().enablePlugin(newPluginID);
 
