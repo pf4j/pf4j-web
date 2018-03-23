@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.rmrodrigues.pf4j.web.demo</groupId>
+		<groupId>org.pf4j.web.demo</groupId>
 		<artifactId>pf4j-web-demo</artifactId>
 		<version>1.0.0</version>
 	</parent>
@@ -16,7 +16,7 @@
 	
 	<properties>
         <plugin.id>pf4j-web-demo-csv-plugin</plugin.id>
-        <plugin.class>org.rmrodrigues.pf4j.demo.csv.plugin.CSVExporterPlugin</plugin.class>
+        <plugin.class>org.pf4j.demo.csv.plugin.CSVExporterPlugin</plugin.class>
         <plugin.version>1.0.0</plugin.version>
         <plugin.provider>RMRdrigues</plugin.provider>
         <plugin.dependencies />
@@ -26,7 +26,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.rmrodrigues.pf4j.web.demo</groupId>
+			<groupId>org.pf4j.web.demo</groupId>
 			<artifactId>pf4j-web-demo-api</artifactId>
 			<version>1.0.0</version>
 			<scope>provided</scope>

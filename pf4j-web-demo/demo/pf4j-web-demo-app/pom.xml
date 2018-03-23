@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.rmrodrigues.pf4j.web.demo</groupId>
+		<groupId>org.pf4j.web.demo</groupId>
 		<artifactId>pf4j-web-demo</artifactId>
 		<version>1.0.0</version>
 	</parent>
@@ -25,17 +25,17 @@
 
 
 		<dependency>
-			<groupId>ro.fortsoft.pf4j</groupId>
+			<groupId>org.pf4j</groupId>
 			<artifactId>pf4j</artifactId>
 			<version>${pf4j.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.rmrodrigues.pf4j.web</groupId>
+			<groupId>org.pf4j.web</groupId>
 			<artifactId>pf4j-web</artifactId>
 			<version>${pf4j.web.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.rmrodrigues.pf4j.web.demo</groupId>
+			<groupId>org.pf4j.web.demo</groupId>
 			<artifactId>pf4j-web-demo-api</artifactId>
 			<version>1.0.0</version>
 		</dependency>

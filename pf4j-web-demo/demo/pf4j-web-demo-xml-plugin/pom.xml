@@ -2,22 +2,22 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.rmrodrigues.pf4j.web.demo</groupId>
+		<groupId>org.pf4j.web.demo</groupId>
 		<artifactId>pf4j-web-demo</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<groupId>org.rmrodrigues.pf4j.web.demo.xml</groupId>
+	<groupId>org.pf4j.web.demo.xml</groupId>
 	<artifactId>pf4j-web-demo-xml-plugin</artifactId>
 	
 	<organization>
 		<name>RMRodrigues</name>
-		<url>https://github.com/rmrodrigues/pf4j-web-demo</url>
+		<url>https://github.com/pf4j/pf4j-web/pf4j-web-demo</url>
 	</organization>
 	
 	<properties>
         <plugin.id>pf4j-web-demo-xml-plugin</plugin.id>
         <plugin.description>pf4j-web-demo-xml-plugin</plugin.description>
-        <plugin.class>org.rmrodrigues.pf4j.demo.xml.plugin.XMLExporterPlugin</plugin.class>
+        <plugin.class>org.pf4j.demo.xml.plugin.XMLExporterPlugin</plugin.class>
         <plugin.version>1.0.0</plugin.version>
         <plugin.provider>RMRdrigues</plugin.provider>
         <plugin.dependencies />
@@ -25,7 +25,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.rmrodrigues.pf4j.web.demo</groupId>
+			<groupId>org.pf4j.web.demo</groupId>
 			<artifactId>pf4j-web-demo-api</artifactId>
 			<version>1.0.0</version>
 			<scope>provided</scope>

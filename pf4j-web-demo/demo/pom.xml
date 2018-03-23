@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.rmrodrigues.pf4j.web.demo</groupId>
+	<groupId>org.pf4j.web.demo</groupId>
 	<artifactId>pf4j-web-demo</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
@@ -14,8 +14,8 @@
 	</modules>
 
 	<properties>
-		<pf4j.version>0.9.0-SNAPSHOT</pf4j.version>
-		<pf4j.web.version>0.9.0-SNAPSHOT</pf4j.web.version>
+		<pf4j.version>2.0.0</pf4j.version>
+		<pf4j.web.version>1.0.0</pf4j.web.version>
 	</properties>
 	<organization>
 		<name>RMRodrigues</name>
@@ -24,8 +24,8 @@
 	<build><plugins><plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.7</source>
+					<target>1.7</target>
 					<argLine>-Dfile.encoding=UTF-8</argLine>
 				</configuration>
 			</plugin></plugins></build>
