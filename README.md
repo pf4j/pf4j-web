@@ -9,9 +9,9 @@ Define the pf4j-web dependency in your pom.xml:
 ```xml
 
 <dependency>
-	<groupId>org.pf4j.web</groupId>
-	<artifactId>pf4j-web</artifactId>
-	<version>1.0.0</version>
+    <groupId>org.pf4j.web</groupId>
+    <artifactId>pf4j-web</artifactId>
+    <version>1.0.0</version>
 </dependency>
 
 ```
@@ -23,7 +23,7 @@ It's necessary to define a listener class in your web.xml:
 ```xml
 
 <listener>
-	<listener-class>org.pf4j.web.PluginManagerInitializer</listener-class>
+    <listener-class>org.pf4j.web.PluginManagerInitializer</listener-class>
 </listener>
 
 ```
@@ -34,8 +34,8 @@ It's possible to define a custom folder for the plugin's home. So, in this case 
 ```xml
 
 <context-param>
-	<param-name>pf4j.pluginsDir</param-name>
-	<param-value>/path/to/plugins</param-value>
+    <param-name>pf4j.pluginsDir</param-name>
+    <param-value>/path/to/plugins</param-value>
 </context-param>
 	
 ```
