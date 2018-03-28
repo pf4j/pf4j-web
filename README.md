@@ -1,5 +1,7 @@
 # pf4j-web
 
+[![Travis CI Build Status](https://travis-ci.org/pf4j/pf4j-web.png)](https://travis-ci.org/pf4j/pf4j-web)
+
  Web module for pf4j. The main goal of this module is allows developers use pf4j in web applications.
  
 ## How to use
