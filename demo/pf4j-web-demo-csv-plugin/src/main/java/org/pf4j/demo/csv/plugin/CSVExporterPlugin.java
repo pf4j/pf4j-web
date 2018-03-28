@@ -25,14 +25,14 @@ import org.pf4j.PluginWrapper;
  */
 public class CSVExporterPlugin extends Plugin {
 
-	/**
-	 * Instantiates a new cSV exporter plugin.
-	 *
-	 * @param wrapper the wrapper
-	 */
-	public CSVExporterPlugin(PluginWrapper wrapper) {
-		super(wrapper);
+    /**
+     * Instantiates a new cSV exporter plugin.
+     *
+     * @param wrapper the wrapper
+     */
+    public CSVExporterPlugin(PluginWrapper wrapper) {
+        super(wrapper);
 
-	}
+    }
 
 }
