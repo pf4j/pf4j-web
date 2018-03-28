@@ -20,14 +20,13 @@ import org.pf4j.PluginWrapper;
 
 /**
  * @author rmrodrigues
- * 
+ *
  */
 public class JSonExporterPlugin extends Plugin {
 
-	public JSonExporterPlugin(PluginWrapper wrapper) {
-		super(wrapper);
-		// TODO Auto-generated constructor stub
-	}
-	
+    public JSonExporterPlugin(PluginWrapper wrapper) {
+        super(wrapper);
+        // TODO Auto-generated constructor stub
+    }
 
 }

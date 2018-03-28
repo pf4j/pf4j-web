@@ -21,7 +21,7 @@
     </properties>
     <organization>
         <name>PF4J</name>
-        <url>https://github.com/pf4j/pf4j-web/pf4j-web-demo</url>
+        <url>https://github.com/pf4j/pf4j-web/demo</url>
     </organization>
     <build>
         <plugins>

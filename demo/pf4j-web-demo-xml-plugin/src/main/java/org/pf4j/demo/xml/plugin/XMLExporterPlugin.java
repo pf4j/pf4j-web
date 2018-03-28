@@ -25,14 +25,14 @@ import org.pf4j.PluginWrapper;
  */
 public class XMLExporterPlugin extends Plugin {
 
-	/**
-	 * Instantiates a new xML exporter plugin.
-	 *
-	 * @param wrapper the wrapper
-	 */
-	public XMLExporterPlugin(PluginWrapper wrapper) {
-		super(wrapper);
+    /**
+     * Instantiates a new xML exporter plugin.
+     *
+     * @param wrapper the wrapper
+     */
+    public XMLExporterPlugin(PluginWrapper wrapper) {
+        super(wrapper);
 
-	}
+    }
 
 }

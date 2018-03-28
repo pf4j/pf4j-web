@@ -32,42 +32,46 @@ import com.thoughtworks.xstream.XStream;
 @Extension
 public class XMLExporter extends ExporterBase {
 
-	/** The Constant NAME. */
-	private static final String NAME = "XML";
-	
-	/** The Constant CONTENTTYPE. */
-	private static final String CONTENTTYPE = "application/xml";
+    /**
+     * The Constant NAME.
+     */
+    private static final String NAME = "XML";
 
-	/**
-	 * Instantiates a new xML exporter.
-	 */
-	public XMLExporter() {
-		super(NAME, CONTENTTYPE);
-	}
+    /**
+     * The Constant CONTENTTYPE.
+     */
+    private static final String CONTENTTYPE = "application/xml";
 
-	/* (non-Javadoc)
-	 * @see org.rmrodrigues.pf4j.demo.api.ExporterBase#export(org.rmrodrigues.pf4j.demo.api.model.Person)
-	 */
-	public byte[] export(Person person) {
-		XStream xstream = new XStream();
-		xstream.alias("person", Person.class);
-		String xml = xstream.toXML(person);
-		return xml.getBytes();
+    /**
+     * Instantiates a new xML exporter.
+     */
+    public XMLExporter() {
+        super(NAME, CONTENTTYPE);
+    }
 
-	}
+    /* (non-Javadoc)
+	 * @see org.pf4j.demo.api.ExporterBase#export(org.pf4j.demo.api.model.Person)
+     */
+    public byte[] export(Person person) {
+        XStream xstream = new XStream();
+        xstream.alias("person", Person.class);
+        String xml = xstream.toXML(person);
+        return xml.getBytes();
 
-	/* (non-Javadoc)
-	 * @see org.rmrodrigues.pf4j.demo.api.ExporterBase#export(java.util.List)
-	 */
-	public byte[] export(List<Person> person) {
-		PersonList personList = new PersonList(person);
-		XStream xstream = new XStream();
-		xstream.alias("person", Person.class);
-		xstream.alias("persons", PersonList.class);
-		xstream.addImplicitCollection(PersonList.class, "list");
-		String xml = xstream.toXML(personList);
-		return xml.getBytes();
+    }
 
-	}
+    /* (non-Javadoc)
+	 * @see org.pf4j.demo.api.ExporterBase#export(java.util.List)
+     */
+    public byte[] export(List<Person> person) {
+        PersonList personList = new PersonList(person);
+        XStream xstream = new XStream();
+        xstream.alias("person", Person.class);
+        xstream.alias("persons", PersonList.class);
+        xstream.addImplicitCollection(PersonList.class, "list");
+        String xml = xstream.toXML(personList);
+        return xml.getBytes();
+
+    }
 
 }
