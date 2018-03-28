@@ -1,6 +1,6 @@
 # pf4j-web-demo
 
-The main goal of this application is to demonstrate how simple is to develop a modular web application using [https://github.com/decebals/pf4j](https://github.com/decebals/pf4j)
+The main goal of this application is to demonstrate how simple is to develop a modular web application using [https://github.com/pf4j/pf4j](https://github.com/pf4j/pf4j)
 
 ## Application Goal
 As a DEMO, this Web Application cantains a list of person data that can be downloaded in varios formats such as:
@@ -12,9 +12,8 @@ As a DEMO, this Web Application cantains a list of person data that can be downl
 Each plugin provides two methods, one to download a single person object and another to download an array os persons.
 
 ## Demo
-See the DEMO: [http://pf4jdemo-rmrodrigues.rhcloud.com/](http://pf4jdemo-rmrodrigues.rhcloud.com/)
 
-
+Run script `update.sh` to run demo locally.
 
 ## Project Structure
 * pf4j-web-demo/ (Maven Project)
